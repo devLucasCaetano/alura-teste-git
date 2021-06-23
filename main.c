@@ -19,7 +19,7 @@ int main()
         printf("->");
         scanf("%d",&chute);
 
-        if(chute<0) {
+        if(chute<0){
             printf("\tErro!Nº Menor do que zero\n");
             continue;
         }
@@ -40,7 +40,7 @@ int main()
                 printf("Seu chute foi menor\n\n");
             }
             qtde++;
-            float pontosperdidos= (chute-num)/2.0;  
+            float pontosperdidos= abs(chute-num)/2.0;  
             pontos= pontos-pontosperdidos;
         }
     }
