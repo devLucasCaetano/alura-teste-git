@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include <timer.h>
+#include <time.h>
 
 int main()
 {
-    //int seg=time(0);
-    //srand();
+    int seg=time(0);
+    srand(seg);
     int numRand = rand();
     int num=numRand%100;
     
