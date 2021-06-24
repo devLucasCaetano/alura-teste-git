@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//#include <timer.h>
 
 int main()
 {
-    int num=23,chute=0;
+    //int seg=time(0);
+    //srand();
+    int numRand = rand();
+    int num=numRand%100;
+    
+    int chute=0;
     int acertou=0,qtde=1,maior=0;
     int venceu=0;
     float pontos=1000;
