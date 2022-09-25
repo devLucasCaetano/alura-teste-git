@@ -4,10 +4,11 @@
 
 int main()
 {
-    int seg=time(0);
-    srand(seg);
-    int numRand = rand();
-    int num=numRand%100;
+    int seg=time(0); // devolve na função time(0) o número de segundos passados desde janerio de 1970, e armazena na variável seg(segundos)
+    srand(seg); // srand() faz : passa a seed (semente) que será um numero aleátorio de verdade armazenado na variável acima.
+    
+    int numRand = rand(); // rand() faz: devolve um número(grande) e randomico (pseudo-aleatório)
+    int num= numRand%100; // calcula o resto da divisão do número acima por 100. o que sempre trará um número entre 0 e 99
     
     int chute=0;
     int acertou=0,qtde=1,maior=0;
@@ -51,5 +52,5 @@ int main()
     }
     printf("Fim de jogo!\n");
     printf("Você acertou em %d tentativas!\n", qtde);
-    printf("Total de pontos: %.2f\n", pontos);
+    printf("Total de pontos feitos: %.2f\n", pontos);
 }
